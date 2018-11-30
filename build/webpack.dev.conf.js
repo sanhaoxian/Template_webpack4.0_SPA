@@ -1,3 +1,6 @@
+/**
+ * 此文件是在开发环境的相应配置
+ */
 const path = require('path');
 const webpack = require("webpack");
 const merge = require("webpack-merge");

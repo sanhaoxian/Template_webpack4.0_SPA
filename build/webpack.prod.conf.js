@@ -1,3 +1,6 @@
+/**
+ * 生产环境相应的配置
+ */
 const path = require('path');
 const webpack = require("webpack");
 const merge = require("webpack-merge");

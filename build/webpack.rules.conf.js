@@ -1,3 +1,6 @@
+/**
+ * loader的集合
+ */
 const extractTextPlugin = require("extract-text-webpack-plugin");
 const rules = [{
 		test: /\.(css|scss|sass)$/,

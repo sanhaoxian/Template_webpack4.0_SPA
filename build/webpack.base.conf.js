@@ -1,3 +1,9 @@
+/**
+ * 这个文件是webpack通用配置，这里的通用是指在开发环境和生产
+ * 环境共用的一些配置参数
+ * 
+ * 
+ */
 const path = require('path');
 const webpack = require("webpack");
 const glob = require("glob");
