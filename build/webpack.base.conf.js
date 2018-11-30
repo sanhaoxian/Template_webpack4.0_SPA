@@ -30,12 +30,7 @@ var getHtmlConfig = function (name, chunks) {
 };
 
 module.exports = {
-	// entry: {
-	// 	// 多入口文件
-	// 	index: './src/pages/index/index.js',
-	// 	login: './src/pages/login/index.js',
-    // },
-    entry: './src/app.js',
+    entry: './src/main.js',
 	module: {
 		rules: [...rules]
 	},
@@ -56,7 +51,7 @@ module.exports = {
 			to: './assets',
 			ignore: ['.*']
 		}]),
-		// 消除冗余的css代码
+		// 消除冗余的css代码,(暂时用不上)
 		// new purifyCssWebpack({
 		// 	paths: glob.sync(path.join(__dirname, "../src/pages/*/*.html"))
 		// }),
@@ -82,20 +77,3 @@ module.exports = {
 	// 	}
 	// },
 }
-//配置页面
-// const htmlArray = [{
-// 		_html: 'index',
-// 		title: '首页',
-// 		chunks: [ 'index']
-// 	},
-// 	{
-// 		_html: 'login',
-// 		title: '登录',
-// 		chunks: ['login']
-// 	},
-// ];
-
-// //自动生成html模板
-// htmlArray.forEach((element) => {
-// 	module.exports.plugins.push(new htmlWebpackPlugin(getHtmlConfig(element._html, element.chunks)));
-// })
