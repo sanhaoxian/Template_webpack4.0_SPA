@@ -1,17 +1,17 @@
-<!-- app.vue -->
 <template>
   <div id="app">
-    hello world
+    <!-- <img src="./assets/logo.png"> -->
+    <router-view/>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'app'
+  name: 'App'
 }
 </script>
 
-<style scoped>
+<style>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -19,7 +19,5 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
-  transform: rotate(0deg);
 }
 </style>
-

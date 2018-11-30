@@ -31,6 +31,11 @@ var getHtmlConfig = function (name, chunks) {
 
 module.exports = {
     entry: './src/main.js',
+    resolve: {
+        alias: {
+            vue: 'vue/dist/vue.js'
+        }
+    },
 	module: {
 		rules: [...rules]
 	},
