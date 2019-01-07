@@ -1,6 +1,5 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import b from '../components/b.vue'
 
 Vue.use(Router)
 
@@ -9,7 +8,12 @@ export default new Router({
         {
             path: '/',
             name: 'b',
-            component: b
+            component: require("../components/b.vue").default
+        },
+        {
+            path: '/a',
+            name: 'a',
+            component: require("../components/a.vue").default
         }
     ]
 });
