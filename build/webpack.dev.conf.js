@@ -19,7 +19,15 @@ const webpackConfigDev = {
 		overlay: true, // 浏览器页面上显示错误
 		// open: true, // 开启浏览器
 		// stats: "errors-only", //stats: "errors-only"表示只打印错误：
-		hot: true // 开启热更新
+        hot: true, // 开启热更新
+        // 这里添加了代理配置
+        // proxy: {
+        //     '/api/*': {
+        //             target: 'http://192.168.1.211:88/',
+        //             secure: false,
+        //             changeOrigin:true
+        //     }
+        // }
 	},
 	plugins: [
 		//热更新

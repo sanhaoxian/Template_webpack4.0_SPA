@@ -12,3 +12,7 @@ Build project structure based on webpack 4.0 and use Vue framework (no scaffoldi
   npm run dev
 
 *因为当前最新的webpack是4.20.+,当运行项目是可能会报错：TypeError: Cannot read property 'properties' of undefined；然后需要注意的是要将webpack-cli版本升级至3.1.1+,然后就可以run dev了*
+
+2019.01.08
+[+] 新增加了axios插件并封装成一个请求方式[参考资料](https://www.jianshu.com/p/dacbefd62e29)，vue中全局方法的定义，集合base文件中便于统一管理。
+
