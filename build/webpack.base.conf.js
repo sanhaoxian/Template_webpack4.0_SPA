@@ -17,6 +17,7 @@ const htmlWebpackPlugin = require("html-webpack-plugin");
 const copyWebpackPlugin = require("copy-webpack-plugin");
 const rules = require("./webpack.rules.conf.js");
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
+const config = require('./config')
 // 获取html-webpack-plugin参数的方法
 var getHtmlConfig = function (name, chunks) {
 	return {
@@ -36,7 +37,7 @@ var getHtmlConfig = function (name, chunks) {
 };
 
 module.exports = {
-    entry: './src/main.js',
+    entry: './'+(config.entryDir||"src")+'/main.js',
     resolve: {
         alias: {
             vue: 'vue/dist/vue.js'
