@@ -4,15 +4,15 @@
     </div>
 </template>
 <script>
-export default{
-    mounted() {
-        
-    },
-    methods: {
-        go() {
-            this.$router.push({path: '/a'});
-        }
+export default {
+  mounted () {
+
+  },
+  methods: {
+    go () {
+      this.$router.push({ path: '/a' })
     }
+  }
 }
 </script>
 <style lang="scss" scope>
