@@ -28,3 +28,6 @@ Build project structure based on webpack 4.0 and use Vue framework (no scaffoldi
 > 2019-01-16 新增eslint代码监测，(eslint-plugin-vue、eslint-loader等相关简单使用，在运行编译时会触发，同时在vscode编辑的时候也会有所提示)
 
 > 接下来要在项目中添加自定义配置文件project.js， 根据自带的project.js不同配置项，实现根据不同的配置项 区别打包；
+
+###### alert
+这里需要提醒一下就是: 每个新建项目都必须要由一个main.js作为入口文件,以及一个project.js作为单独自定义配置的文件(等我熟悉后,后期可以不作为必要文件)

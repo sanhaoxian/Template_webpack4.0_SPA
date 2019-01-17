@@ -6,7 +6,6 @@ const webpack = require('webpack')
 const merge = require('webpack-merge')
 const webpackConfigBase = require('./webpack.base.conf')
 const config = require('./config')
-console.log('入口路径', path.join(__dirname, config.entryDir === 'src' ? '../src' : '../' + config.entryDir))
 const webpackConfigDev = {
   mode: 'development', // 通过 mode 声明开发环境
   output: {
@@ -14,7 +13,7 @@ const webpackConfigDev = {
     path: path.resolve(__dirname, '../dist')
   },
   devServer: {
-    contentBase: path.join(__dirname, config.entryDir === 'src' ? '../src' : '../' + config.entryDir),
+    contentBase: config.entryDir === 'src' ? path.join(__dirname, '../src') : ('../' + config.entryDir),
     publicPath: '/',
     host: '127.0.0.1',
     port: '8089',
@@ -40,5 +39,5 @@ const webpackConfigDev = {
     rules: []
   }
 }
-console.log('传入参数', config.entryDir)
+// console.log('传入参数', config.entryDir)
 module.exports = merge(webpackConfigBase, webpackConfigDev)
