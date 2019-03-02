@@ -1,13 +1,18 @@
-.DS_Store
-node_modules/
-md/
-dist/
-npm-debug.log*
-package-lock.json
 # Editor directories and files
+.DS_Store
 .idea
-.vscode
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
+.verysync
+
+# Runtime data
+.eslint-loader-cache/
+node_modules/
+npm-debug.log*
+typings/
+yarn-debug.log*
+yarn-error.log*
+dist/*
+
+# project
+/dist/
+/package-lock.json
+/yarn.lock
