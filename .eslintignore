@@ -1,2 +1,18 @@
+# Editor directories and files
+.DS_Store
+.idea
+.verysync
+
+# Runtime data
+.eslint-loader-cache/
+node_modules/
+npm-debug.log*
+typings/
+yarn-debug.log*
+yarn-error.log*
 dist/*
-node_modules/*
+
+# project
+/dist/
+/package-lock.json
+/yarn.lock
